@@ -84,6 +84,9 @@ nav ul{
   justify-content: space-between;
 }
 
+nav2{
+  display:none;
+}
 /*Products*/
 
 .contain{
@@ -182,6 +185,8 @@ nav ul{
   margin-left:2px;
 }
 
+/*Footer*/
+
 footer{
   display: flex;
   justify-content: center;
@@ -193,4 +198,143 @@ footer{
   width:960px;
   height:5rem;
   color:white;
+}
+
+/*Tablet screens*/
+
+@media only screen and (max-width: 1024px){
+  nav2{
+    display:flex;
+    background-color: firebrick;
+    justify-content: center;
+    color:white;
+    height:2.5rem;
+    align-items: center;
+  }
+
+  nav2 ul{
+    display: flex;
+    width: 960px;
+    justify-content: center;
+  }
+
+  nav{
+    display:none;
+  }
+  .container{
+    width:100%;
+  }
+
+  .pen, .watch {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width:47%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid black;
+  }
+
+.glasses{
+  display:none;
+}
+}
+
+/*Mobile Screens*/
+
+@media only screen and (max-width: 470px){
+
+.logo span{
+  display:none;
+}
+
+.logo{
+  justify-content: center;
+}
+
+.main-banner{
+  height: 15rem;
+}
+
+.container{
+  width: 100%;
+}
+
+.headline{
+  padding-top:1rem;
+  padding-left: 2rem;
+  margin-top:10rem;
+  background-color: black;
+  color:white;
+  width:100%;
+}
+
+.headline h4, h1{
+  font-weight: bold;
+}
+
+.headline h1{
+  padding-top:.5rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.headline h4{
+  font-size: .77rem;
+}
+
+  .products{
+    display: flex;
+    justify-content: center;
+  }
+  .pen{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid black;
+  }
+
+.glasses, .watch{
+  display:none;
+}
+
+.contain{
+  display:flex;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+}
+
+
+.business-info{
+  padding-top:3rem;
+  padding-bottom:4rem;
+  width:90%;
+  display: block;
+  justify-content: center;
+
+}
+
+.info{
+
+  padding-top:3rem;
+  padding-bottom:4rem;
+  display:flex;
+  flex-direction: column;
+  width:100%
+}
+
+.coord{
+  margin-top:5%;
+  margin-left:2%;
+}
+
+.container2{
+  width: 100%;
+  justify-content: center;
+}
+
 }
